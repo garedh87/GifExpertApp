@@ -5,7 +5,7 @@ import { GifGrid } from './componets/GifGrid';
 
 const GifExpertApp = (props )=> {
 
-   const [categories, setCategories] = useState(['One Punch'])
+   const [categories, setCategories] = useState(['Search GIF'])
 
     
 
