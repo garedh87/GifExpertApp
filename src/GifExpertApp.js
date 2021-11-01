@@ -10,13 +10,18 @@ const GifExpertApp = (props )=> {
     
 
     return (
-        <>
-            <h2>GifExpertApp</h2>
-            <AddCategory setCategories={setCategories}/>
+        <div className='container mainContainer'>
+            <div class='row'>
+                <h1>GIF Expert App</h1>
+                <h3>Find your favourite GIFs</h3>
+               
+            </div>
+
             <hr />
-
-
-            <ol>
+                <div className='row justify-content-sm-center'>
+                    <AddCategory setCategories={setCategories}/>
+                </div>
+            <div className='container'>
                 {
                     categories.map(category => (
                         <GifGrid
@@ -25,9 +30,9 @@ const GifExpertApp = (props )=> {
                         />
                     ))
                 }
-            </ol>
+            </div>
 
-        </>
+        </div>
 
     )
 }
